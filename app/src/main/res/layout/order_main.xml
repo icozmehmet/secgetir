@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65FFB300"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".OrderAcivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="325dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ScrollView
+        android:layout_width="404dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="103dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginLeft="136dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/musteri_adi"
+                android:layout_width="252dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img2" />
+
+            <TextView
+                android:id="@+id/urun_adi"
+                android:layout_width="252dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/musteri_adi" />
+
+            <TextView
+                android:id="@+id/urun_adedi"
+                android:layout_width="135dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Adet Girin"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/urun_maliyeti" />
+
+            <EditText
+                android:id="@+id/edit_adet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/urun_adedi"
+                app:layout_constraintTop_toBottomOf="@+id/urun_maliyeti"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/urun_maliyeti"
+                android:layout_width="252dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/urun_adi" />
+
+            <TextView
+                android:id="@+id/kart_no"
+                android:layout_width="133dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Kart No"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/urun_adedi" />
+
+            <TextView
+                android:id="@+id/il"
+                android:layout_width="133dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="İl Giriniz:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/ilce"
+                android:layout_width="125dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="İlçe  Giriniz:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/il" />
+
+            <TextView
+                android:id="@+id/koy"
+                android:layout_width="125dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Mahalle/köy Giriniz:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ilce" />
+
+            <EditText
+                android:id="@+id/edit_krt_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/kart_no"
+                app:layout_constraintTop_toBottomOf="@+id/edit_adet"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/edit_ilce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/ilce"
+                app:layout_constraintTop_toBottomOf="@+id/edit_il"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/edit_koy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/koy"
+                app:layout_constraintTop_toBottomOf="@+id/edit_ilce"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/edit_il"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/il"
+                app:layout_constraintTop_toBottomOf="@+id/edit_mail"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/backk"
+                android:layout_width="149dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="Anasayfaya Geri Dön"
+                app:backgroundTint="@color/buttoncolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/koy" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="133dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="E-mail"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kart_no" />
+
+            <EditText
+                android:id="@+id/edit_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/edit_krt_no"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/buyy"
+                android:layout_width="127dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Satın Al"
+                app:backgroundTint="@color/buttoncolor"
+                app:layout_constraintStart_toEndOf="@+id/backk"
+                app:layout_constraintTop_toBottomOf="@+id/edit_koy" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

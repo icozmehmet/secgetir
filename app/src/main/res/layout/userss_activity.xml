@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65FFB300"
+    tools:context=".NewActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="321dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_kadi"
+                android:layout_width="238dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/k_adi"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/edit_giris_sifre"
+                android:layout_width="238dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="textPersonName|textPassword"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/passs"
+                app:layout_constraintTop_toBottomOf="@+id/edit_kadi"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/k_adi"
+                android:layout_width="145dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Kullanıcı Adı:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/passs"
+                android:layout_width="145dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Şifre:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/k_adi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/goo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#5E3222"
+        android:text="Giriş "
+        app:backgroundTint="@color/buttoncolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/sifreunuttum"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Şifremi Unuttum"
+        android:textColor="#A33949AB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goo" />
+
+    <TextView
+        android:id="@+id/uyeol"
+        android:layout_width="117dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Üye Ol"
+        android:textColor="#A33949AB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifreunuttum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

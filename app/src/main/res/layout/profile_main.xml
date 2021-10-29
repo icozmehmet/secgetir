@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65FFB300"
+    tools:context=".EnterAcivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="343dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ScrollView
+        android:layout_width="399dp"
+        android:layout_height="526dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Adi"
+                android:layout_width="109dp"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:text="Adı"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_adi"
+                android:layout_width="197dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/Adi"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/k_adi"
+                android:layout_width="109dp"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:text="Kullanıcı Adı"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Adi" />
+
+            <TextView
+                android:id="@+id/eposta"
+                android:layout_width="109dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="E-Posta"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+            <TextView
+                android:id="@+id/sifre"
+                android:layout_width="109dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Şifre"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/k_adi" />
+
+            <EditText
+                android:id="@+id/eddit_kadi"
+                android:layout_width="197dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/k_adi"
+                app:layout_constraintTop_toBottomOf="@+id/edit_adi"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/eddit_mail"
+                android:layout_width="197dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/eposta"
+                app:layout_constraintTop_toBottomOf="@+id/edit_pas"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/edit_pas"
+                android:layout_width="197dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toEndOf="@+id/sifre"
+                app:layout_constraintTop_toBottomOf="@+id/eddit_kadi"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/Guncelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:text="Guncelle"
+                app:backgroundTint="@color/buttoncolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eposta" />
+
+            <Button
+                android:id="@+id/gerii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24dp"
+                android:text="Geri"
+                app:backgroundTint="@color/buttoncolor"
+                app:layout_constraintStart_toEndOf="@+id/Guncelle"
+                app:layout_constraintTop_toBottomOf="@+id/eddit_mail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
